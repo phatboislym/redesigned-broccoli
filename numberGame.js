@@ -9,7 +9,7 @@
 
 function NumberGuessingGame(range)
 {
-	var username = prompt("Enter your name");
+	const username = prompt("Enter your username");
 	var secretNumber = Math.floor(Math.random() * (range + 1));
 	var range = range;
 	var score = 0;
@@ -18,18 +18,20 @@ function NumberGuessingGame(range)
 	while (true)
 	{
 		secretNumber = Math.floor(Math.random() * (range + 1));
-		var playerGuess = Number(prompt(`Hello ${username}. Guess a number between 1 and ${range}`));
+		console.log(`Hello ${username}`);
+		var playerGuess = Number(prompt(`Guess a number between 1 and ${range}`));
 
-		if (playerGuess === secretNumber)
+		if (playerGuess == secretNumber)
 		{
 			score = score + 1;
 			stage = stage + 1;
 			range = range + 1;
 			console.log("You guessed right! Congratulations!");
+			console.log("___________________________________________________");
 			if (score == 1)
-				console.log(`You now have ${score} point. Advance to stage ${stage}`);
+				console.log(`You now have ${score} point.\nAdvance to stage ${stage}`);
 			else
-				console.log(`You now have ${score} points. Advance to stage ${stage}`);
+				console.log(`You now have ${score} points.\nAdvance to stage ${stage}`);
 		}
 		else
 		{
