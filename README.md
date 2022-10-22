@@ -1,3 +1,3 @@
 # redesigned-broccoli
 ## numberGame.js
-[link](https://replit.com/@phatboislym/RawSerpentineServicePack#numberGame.js"numberGame.js")
+[numberGame.js](https://replit.com/@phatboislym/RawSerpentineServicePack#numberGame.js"numberGame.js")
