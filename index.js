@@ -10,15 +10,14 @@
 function NumberGuessingGame(range)
 {
 	const username = prompt("Enter your username");
-	var secretNumber = Math.floor(Math.random() * (range + 1));
+	console.log(`Hello ${username}`);
 	var range = range;
 	var score = 0;
 	var stage = 1;
 
 	while (true)
 	{
-		secretNumber = Math.floor(Math.random() * (range + 1));
-		console.log(`Hello ${username}`);
+		var secretNumber = Math.floor(Math.random() * (range + 1));
 		var playerGuess = Number(prompt(`Guess a number between 1 and ${range}`));
 
 		if (playerGuess == secretNumber)
